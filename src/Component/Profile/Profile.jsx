@@ -9,10 +9,10 @@ const Profile = ({ selected, handleClick}) => {
                 <img className='w-20 rounded-full border-solid border-4 border-white lg:w-14' src={Avatar} alt="" />
                     <div className='ml-4 lg:ml-0 lg:mt-5 '>
                         <p className='text-PaleBlue'>Report for</p>
-                        <h1 className='text-[1.4rem] mobile:text-[1.9rem] '>Jeremy Robson</h1>
+                        <h1 className='text-[1.4rem] mobile:text-[1.9rem] lg:text-[2rem]  '>Jeremy Robson</h1>
                     </div>
                 </div>
-                <div className='flex justify-between p-6 text-[1.1rem] rounded-[15px] text-DesaturatedBlue lg:grid lg:p-0 lg:px-5 lg:py-5 lg:gap-2'>
+                <div className='flex justify-between p-6 text-[1.1rem] rounded-[15px] text-DesaturatedBlue lg:grid lg:p-0 lg:px-5 lg:py-5 lg:gap-3'>
                     <a className={`hover:text-white cursor-pointer ${selected === "daily" ? 'text-white' : ''}`} onClick={() => handleClick("daily")}>Daily</a>
                     <a className={`hover:text-white cursor-pointer ${selected === "weekly" ? 'text-white' : ''}`} onClick={() => handleClick("weekly")}>Weekly</a>
                     <a className={`hover:text-white cursor-pointer ${selected === "monthly" ? 'text-white' : ''}`} onClick={() => handleClick("monthly")}>Monthly</a>
